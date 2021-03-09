@@ -11,7 +11,7 @@
 1. **aaProbs** >> cd dir to probs
 2. **aaNotes** >> cd into notes
 3. **gsho** >> shows git url
-4. **update**>> adds,commits, and pushes with ‘update’
+4. **update**>> adds,commits, and pushes with 'update'
 5. **open $1**>> open file or url in pref app
 6. **gitIgn** >> adds .gitignore and adds node modules
 7. **delZone** >> deletes zone identifiers
@@ -45,8 +45,8 @@ win + q >> perform ocr capture
 
 To kill specific ports
 ```console
-	lsof -i :<port>
-	echo "list of PID"
-	kill -9 <PID>
+  lsof -i :<port>
+  echo "list of PID"
+  kill -9 <PID>
 
 ```

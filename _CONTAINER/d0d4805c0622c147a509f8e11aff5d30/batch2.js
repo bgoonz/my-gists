@@ -1,6 +1,6 @@
 const lastDateOfMonth = ( date = new Date() ) => {
-    let d = new Date( date.getFullYear(), date.getMonth() + 1, 0 );
-    return d.toISOString().split( 'T' )[ 0 ];
+  let d = new Date( date.getFullYear(), date.getMonth() + 1, 0 );
+  return d.toISOString().split( 'T' )[ 0 ];
 };
 
 //--------------------------------
@@ -12,8 +12,8 @@ lastDateOfMonth( new Date( '2015-08-11' ) ); // '2015-08-30'
 
 
 const levenshteinDistance = ( s, t ) => {
-    if ( !s.length ) return t.length;
-    if ( !t.length ) return s.length;
+  if ( !s.length ) return t.length;
+  if ( !t.length ) return s.length;
   const arr = [];
   for ( let i = 0; i <= t.length; i++ ) {
     arr[ i ] = [ i ];
@@ -41,7 +41,7 @@ levenshteinDistance( 'duck', 'dark' ); // 2
 
 const mapKeys = ( obj, fn ) =>
   Object.keys( obj ).reduce( ( acc, k ) => {
-      acc[ fn( obj[ k ], k, obj ) ] = obj[ k ];
+    acc[ fn( obj[ k ], k, obj ) ] = obj[ k ];
     return acc;
   }, {} );
 
@@ -69,7 +69,7 @@ mapNumRange( 5, 0, 10, 0, 100 ); // 50
 
 const mapObject = ( arr, fn ) =>
   arr.reduce( ( acc, el, i ) => {
-      acc[ el ] = fn( el, i, arr );
+    acc[ el ] = fn( el, i, arr );
     return acc;
   }, {} );
 
@@ -84,8 +84,8 @@ mapObject( [ 1, 2, 3 ], a => a * a ); // { 1: 1, 2: 4, 3: 9 }
 const mapString = ( str, fn ) =>
   str
   .split( '' )
-    .map( ( c, i ) => fn( c, i, str ) )
-    .join( '' );
+  .map( ( c, i ) => fn( c, i, str ) )
+  .join( '' );
 
 //--------------------------------
 
@@ -132,15 +132,15 @@ mergeSort( [ 5, 1, 4, 2, 3 ] ); // [1, 2, 3, 4, 5]
 
 
 const mergeSortedArrays = ( a, b ) => {
-    const _a = [ ...a ],
-      _b = [ ...b ];
-    return Array.from( {
-      length: _a.length + _b.length
-    }, () => {
-      if ( !_a.length ) return _b.shift();
-      else if ( !_b.length ) return _a.shift();
-      else return _a[ 0 ] > _b[ 0 ] ? _b.shift() : _a.shift();
-    } );
+  const _a = [ ...a ],
+    _b = [ ...b ];
+  return Array.from( {
+    length: _a.length + _b.length
+  }, () => {
+    if ( !_a.length ) return _b.shift();
+    else if ( !_b.length ) return _a.shift();
+    else return _a[ 0 ] > _b[ 0 ] ? _b.shift() : _a.shift();
+  } );
 };
 
 //--------------------------------
@@ -154,7 +154,7 @@ mergeSortedArrays( [ 1, 4, 5 ], [ 2, 3, 6 ] ); // [1, 2, 3, 4, 5, 6]
 const mostFrequent = arr =>
   Object.entries(
     arr.reduce( ( a, v ) => {
-          a[ v ] = a[ v ] ? a[ v ] + 1 : 1;
+      a[ v ] = a[ v ] ? a[ v ] + 1 : 1;
       return a;
     }, {} ) ).reduce( ( a, v ) => ( v[ 1 ] >= a[ 1 ] ? v : a ), [ null, 0 ] )[ 0 ];
 
@@ -345,11 +345,11 @@ const quickSort = arr => {
   const pivotIndex = Math.floor( arr.length / 2 );
   const pivot = a[ pivotIndex ];
   const [ lo, hi ] = a.reduce(
-      ( acc, val, i ) => {
-        if ( val < pivot || ( val === pivot && i != pivotIndex ) ) {
-          acc[ 0 ].push( val );
-        } else if ( val > pivot ) {
-          acc[ 1 ].push( val );
+    ( acc, val, i ) => {
+      if ( val < pivot || ( val === pivot && i != pivotIndex ) ) {
+        acc[ 0 ].push( val );
+      } else if ( val > pivot ) {
+        acc[ 1 ].push( val );
       }
       return acc;
     },
@@ -372,9 +372,9 @@ quickSort( [ 1, 6, 1, 5, 3, 2, 1, 4 ] ); // [1, 1, 1, 2, 3, 4, 5, 6]
 const randomAlphaNumeric = length => {
   let s = '';
   Array.from( {
-      length
-    } ).some( () => {
-        s += Math.random().toString( 36 ).slice( 2 );
+    length
+  } ).some( () => {
+    s += Math.random().toString( 36 ).slice( 2 );
     return s.length >= length;
   } );
   return s.slice( 0, length );
@@ -531,8 +531,8 @@ const selectionSort = arr => {
   for ( let i = 0; i < a.length; i++ ) {
     const min = a
       .slice( i + 1 )
-        .reduce( ( acc, val, j ) => ( val < a[ acc ] ? j + i + 1 : acc ), i );
-      if ( min !== i )[ a[ i ], a[ min ] ] = [ a[ min ], a[ i ] ];
+      .reduce( ( acc, val, j ) => ( val < a[ acc ] ? j + i + 1 : acc ), i );
+    if ( min !== i )[ a[ i ], a[ min ] ] = [ a[ min ], a[ i ] ];
   }
   return a;
 };
@@ -561,8 +561,8 @@ const slugify = str =>
   .toLowerCase()
   .trim()
   .replace( /[^\w\s-]/g, '' )
-    .replace( /[\s_-]+/g, '-' )
-    .replace( /^-+|-+$/g, '' );
+  .replace( /[\s_-]+/g, '-' )
+  .replace( /^-+|-+$/g, '' );
 
 //--------------------------------
 
@@ -583,10 +583,10 @@ sortCharactersInString( 'cabbage' ); // 'aabbceg'
 
 
 const sortedIndexBy = ( arr, n, fn ) => {
-    const isDescending = fn( arr[ 0 ] ) > fn( arr[ arr.length - 1 ] );
-    const val = fn( n );
-    const index = arr.findIndex( el =>
-        isDescending ? val >= fn( el ) : val <= fn( el )
+  const isDescending = fn( arr[ 0 ] ) > fn( arr[ arr.length - 1 ] );
+  const val = fn( n );
+  const index = arr.findIndex( el =>
+    isDescending ? val >= fn( el ) : val <= fn( el )
   );
   return index === -1 ? arr.length : index;
 };
@@ -606,7 +606,7 @@ sortedIndexBy( [ {
 
 
 const sortedLastIndex = ( arr, n ) => {
-    const isDescending = arr[ 0 ] > arr[ arr.length - 1 ];
+  const isDescending = arr[ 0 ] > arr[ arr.length - 1 ];
   const index = arr
     .reverse()
     .findIndex( el => ( isDescending ? n <= el : n >= el ) );
@@ -622,8 +622,8 @@ sortedLastIndex( [ 10, 20, 30, 30, 40 ], 30 ); // 4
 
 
 const sortedLastIndexBy = ( arr, n, fn ) => {
-    const isDescending = fn( arr[ 0 ] ) > fn( arr[ arr.length - 1 ] );
-    const val = fn( n );
+  const isDescending = fn( arr[ 0 ] ) > fn( arr[ arr.length - 1 ] );
+  const val = fn( n );
   const index = arr
     .map( fn )
     .reverse()

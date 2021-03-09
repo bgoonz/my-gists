@@ -8,10 +8,7 @@ stringPermutations( 'abc' ); // ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
 
 const supportsTouchEvents = () =>
   window && 'ontouchstart' in window;
-
 //--------------------------------
-
-
 supportsTouchEvents(); // true
 
 //--------------------------------
@@ -22,8 +19,6 @@ const swapCase = str => [ ...str ]
   .join( '' );
 
 //--------------------------------
-
-
 swapCase( 'Hello world!' ); // 'hELLO WORLD!'
 
 //--------------------------------
@@ -1696,8 +1691,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -3611,8 +3605,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -5526,8 +5519,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -7441,8 +7433,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -9356,8 +9347,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -11271,8 +11261,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -13186,8 +13175,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -15101,8 +15089,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -17016,8 +17003,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -18931,8 +18917,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -20846,8 +20831,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -22761,8 +22745,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -24676,8 +24659,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -26591,8 +26573,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -28506,8 +28487,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -30421,8 +30401,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -32336,8 +32315,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -34251,8 +34229,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -36166,8 +36143,7 @@ const remove = ( arr, func ) =>
   arr.filter( func ).reduce( ( acc, val ) => {
     arr.splice( arr.indexOf( val ), 1 );
     return acc.concat( val );
-  }, [] ) :
-  [];
+  }, [] ): [];
 
 //--------------------------------
 
@@ -37122,8 +37098,7 @@ any( [ 0, 0, 1, 0 ] ); // true
 
 
 const aperture = ( n, arr ) =>
-  n > arr.length ?
-  [] :
+  n > arr.length ? [] :
   arr.slice( n - 1 ).map( ( v, i ) => arr.slice( i, i + n ) );
 
 //--------------------------------
@@ -37825,12 +37800,10 @@ const combine = ( a, b, prop ) =>
   Object.values(
     [ ...a, ...b ].reduce( ( acc, v ) => {
       if ( v[ prop ] )
-        acc[ v[ prop ] ] = acc[ v[ prop ] ] ?
-        {
+        acc[ v[ prop ] ] = acc[ v[ prop ] ] ? {
           ...acc[ v[ prop ] ],
           ...v
-        } :
-        {
+        }: {
           ...v
         };
       return acc;
@@ -39421,8 +39394,7 @@ let m = functionName( Math.max )( 5, 6 );
 
 
 const functions = ( obj, inherited = false ) =>
-  ( inherited ?
-    [ ...Object.keys( obj ), ...Object.keys( Object.getPrototypeOf( obj ) ) ] :
+  ( inherited ? [ ...Object.keys( obj ), ...Object.keys( Object.getPrototypeOf( obj ) ) ] :
     Object.keys( obj )
   ).filter( key => typeof obj[ key ] === 'function' );
 
@@ -41850,8 +41822,7 @@ console.log( anagramsCached.cache ); // The cached anagrams map
 const merge = ( ...objs ) => [ ...objs ].reduce(
   ( acc, obj ) =>
   Object.keys( obj ).reduce( ( a, k ) => {
-    acc[ k ] = acc.hasOwnProperty( k ) ?
-      [].concat( acc[ k ] ).concat( obj[ k ] ) :
+    acc[ k ] = acc.hasOwnProperty( k ) ? [].concat( acc[ k ] ).concat( obj[ k ] ) :
       obj[ k ];
     return acc;
   }, {} ), {}
@@ -42461,9 +42432,7 @@ const orderBy = ( arr, props, orders ) => [ ...arr ].sort( ( a, b ) =>
   props.reduce( ( acc, prop, i ) => {
     if ( acc === 0 ) {
       const [ p1, p2 ] =
-      orders && orders[ i ] === 'desc' ?
-        [ b[ prop ], a[ prop ] ] :
-        [ a[ prop ], b[ prop ] ];
+      orders && orders[ i ] === 'desc' ? [ b[ prop ], a[ prop ] ] : [ a[ prop ], b[ prop ] ];
       acc = p1 > p2 ? 1 : p1 < p2 ? -1 : 0;
     }
     return acc;

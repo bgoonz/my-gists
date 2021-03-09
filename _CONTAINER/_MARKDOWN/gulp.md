@@ -3,7 +3,7 @@
 https://css-tricks.com/the-simplest-ways-to-handle-html-includes/
 
 Use Gulp
-What’s even faster than a server-side include? If the include is preprocessed before it’s even on the server. Gulp has a variety of processors that can do this. One is gulp-file-include.
+What's even faster than a server-side include? If the include is preprocessed before it's even on the server. Gulp has a variety of processors that can do this. One is gulp-file-include.
 
 That would look like this:
 
@@ -16,7 +16,7 @@ That would look like this:
    @@include('./footer.html')
 </body>
 ...
-And you’d process it like:
+And you'd process it like:
 
 var fileinclude = require('gulp-file-include'),
   gulp = require('gulp');

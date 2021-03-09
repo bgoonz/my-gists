@@ -9,25 +9,28 @@ This is a very simple GitHub action that allows you to deploy to Heroku. The act
 Table of Contents
 -----------------
 
-1.  [Getting Started](#getting-started)
-2.  [Important Note](#important-note)
-3.  [Options](#options)
-4.  [Examples](#examples)
-    *   [Deploy with Docker](#deploy-with-docker)
-    *   [Deploy with custom Buildpacks](#deploy-with-custom-buildpacks)
-    *   [Deploy Subdirectory](#deploy-subdirectory)
-    *   [Deploy Custom Branch](#deploy-custom-branch)
-5.  [Health Check](#health-check)
-    *   [Advanced Usage](#advanced-usage)
-    *   [Adding Delay](#adding-delay)
-    *   [Rollback on healthcheck failure](#rollback-on-healthcheck-failure)
-6.  [Environment Variables](#environment-variables)
-    *   [ENV File](#env-file)
-7.  [Procfile Passing](#procfile-passing)
-8.  [Deploying to a team](#deploying-to-a-team)
-9.  [Just Login](#just-login)
-10.  [Important Notes](#important-notes)
-11.  [License](#license)
+- [Deploy to Heroku](#deploy-to-heroku)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Important Note](#important-note)
+  - [Options](#options)
+  - [Examples](#examples)
+    - [Deploy with Docker](#deploy-with-docker)
+    - [Deploy with custom Buildpacks](#deploy-with-custom-buildpacks)
+    - [Deploy Subdirectory](#deploy-subdirectory)
+    - [Deploy custom branch](#deploy-custom-branch)
+    - [Deploy custom remote branch](#deploy-custom-remote-branch)
+  - [Health Check](#health-check)
+    - [Advanced Usage](#advanced-usage)
+    - [Adding Delay](#adding-delay)
+    - [Rollback on healthcheck failure](#rollback-on-healthcheck-failure)
+  - [Environment Variables](#environment-variables)
+    - [ENV File](#env-file)
+  - [Procfile Passing](#procfile-passing)
+  - [Deploying to a team](#deploying-to-a-team)
+  - [Just Login](#just-login)
+  - [Important Notes](#important-notes)
+  - [License](#license)
 
 Getting Started
 ---------------
@@ -76,28 +79,28 @@ Options
 
 The action comes with additional options that you can use to configure your project's behavior on Heroku. You can setup these options under the "with" object as presented above:
 
-| Name | Required | Description | Example |
-| --- | --- | --- | --- |
-| heroku\_api\_key | true | This will be used for authentication. You can find it in your heroku homepage account settings | \*\*\* |
-| heroku\_email | true | Email that you use with heroku | [nsakhilesh02@gmail.com](mailto:nsakhilesh02@gmail.com) |
-| heroku\_app\_name | true | The appname to use for deploying/updating | demo-rest-api |
-| buildpack | false | An optional buildpack to use when creating the heroku application | [https://github.com/heroku/heroku-buildpack-static.git](https://github.com/heroku/heroku-buildpack-static.git) |
-| branch | false | The branch that you would like to deploy to Heroku. Defaults to "HEAD" | master, dev, test |
-| dontautocreate | false | Set this to true if you don't want to automatically create the Heroku app | true or false |
-| dontuseforce | false | Set this to true if you don't want to use --force when switching branches | true or false |
-| usedocker | false | Will deploy using Dockerfile in project root | true or false |
-| docker\_heroku\_process\_type | false | Type of heroku process (web, worker, etc). This option only makes sense when usedocker enabled. Defaults to "web" (Thanks to [singleton11](https://github.com/singleton11) for adding this feature) | web, worker |
-| docker\_build\_args | false | A list of args to pass into the Docker build. This option only makes sense when usedocker enabled. | NODE\_ENV |
-| appdir | false | Set if your app is located in a subdirectory | api, apis/python |
-| healthcheck | false | A URL to which a healthcheck is performed (checks for 200 request) | [https://demo-rest-api.herokuapp.com](https://demo-rest-api.herokuapp.com/) |
-| checkstring | false | Value to check for when conducting healthcheck requests | ok |
-| delay | false | Time (in seconds) to wait before performing healthcheck. Defaults to 0 seconds | 5 |
-| procfile | false | Contents of the Procfile to save and deploy | web: npm start |
-| rollbackonhealthcheckfailed | false | When set to true this will attempt to rollback to the previous release if the healthcheck fails | true or false |
-| env\_file | false | path to an env file (with respect to appdir) | /.env |
-| justlogin | false | Set to true if you want the action to just login to Heroku and nothing else | true or false |
-| region | false | The region in which you would like to deploy a server | eu or dublin |
-| team | false | If deploying to an organization, then specify the name of the team or organization here | team-xyz |
+| Name                          | Required | Description                                                                                                                                                                                         | Example                                                                                                        |
+| ----------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| heroku\_api\_key              | true     | This will be used for authentication. You can find it in your heroku homepage account settings                                                                                                      | \*\*\*                                                                                                         |
+| heroku\_email                 | true     | Email that you use with heroku                                                                                                                                                                      | [nsakhilesh02@gmail.com](mailto:nsakhilesh02@gmail.com)                                                        |
+| heroku\_app\_name             | true     | The appname to use for deploying/updating                                                                                                                                                           | demo-rest-api                                                                                                  |
+| buildpack                     | false    | An optional buildpack to use when creating the heroku application                                                                                                                                   | [https://github.com/heroku/heroku-buildpack-static.git](https://github.com/heroku/heroku-buildpack-static.git) |
+| branch                        | false    | The branch that you would like to deploy to Heroku. Defaults to "HEAD"                                                                                                                              | master, dev, test                                                                                              |
+| dontautocreate                | false    | Set this to true if you don't want to automatically create the Heroku app                                                                                                                           | true or false                                                                                                  |
+| dontuseforce                  | false    | Set this to true if you don't want to use --force when switching branches                                                                                                                           | true or false                                                                                                  |
+| usedocker                     | false    | Will deploy using Dockerfile in project root                                                                                                                                                        | true or false                                                                                                  |
+| docker\_heroku\_process\_type | false    | Type of heroku process (web, worker, etc). This option only makes sense when usedocker enabled. Defaults to "web" (Thanks to [singleton11](https://github.com/singleton11) for adding this feature) | web, worker                                                                                                    |
+| docker\_build\_args           | false    | A list of args to pass into the Docker build. This option only makes sense when usedocker enabled.                                                                                                  | NODE\_ENV                                                                                                      |
+| appdir                        | false    | Set if your app is located in a subdirectory                                                                                                                                                        | api, apis/python                                                                                               |
+| healthcheck                   | false    | A URL to which a healthcheck is performed (checks for 200 request)                                                                                                                                  | [https://demo-rest-api.herokuapp.com](https://demo-rest-api.herokuapp.com/)                                    |
+| checkstring                   | false    | Value to check for when conducting healthcheck requests                                                                                                                                             | ok                                                                                                             |
+| delay                         | false    | Time (in seconds) to wait before performing healthcheck. Defaults to 0 seconds                                                                                                                      | 5                                                                                                              |
+| procfile                      | false    | Contents of the Procfile to save and deploy                                                                                                                                                         | web: npm start                                                                                                 |
+| rollbackonhealthcheckfailed   | false    | When set to true this will attempt to rollback to the previous release if the healthcheck fails                                                                                                     | true or false                                                                                                  |
+| env\_file                     | false    | path to an env file (with respect to appdir)                                                                                                                                                        | /.env                                                                                                          |
+| justlogin                     | false    | Set to true if you want the action to just login to Heroku and nothing else                                                                                                                         | true or false                                                                                                  |
+| region                        | false    | The region in which you would like to deploy a server                                                                                                                                               | eu or dublin                                                                                                   |
+| team                          | false    | If deploying to an organization, then specify the name of the team or organization here                                                                                                             | team-xyz                                                                                                       |
 
 Examples
 --------
@@ -164,7 +167,7 @@ Also, thanks to [Olav Sundfør](https://github.com/olaven) for adding the Docker
 
 Taken from the official heroku website:
 
-"Heroku Buildpacks are sets of open source scripts that are used for compiling apps on Heroku. They form the backbone of Heroku’s [polyglot platform](https://www.heroku.com/languages). Buildpacks enable you to extend Heroku's build system to support your language or customizations, or to make particular binary packages available to the runtime. Heroku Buildpacks give you the freedom to code in the languages and frameworks that work best for your app and your team"
+"Heroku Buildpacks are sets of open source scripts that are used for compiling apps on Heroku. They form the backbone of Heroku's [polyglot platform](https://www.heroku.com/languages). Buildpacks enable you to extend Heroku's build system to support your language or customizations, or to make particular binary packages available to the runtime. Heroku Buildpacks give you the freedom to code in the languages and frameworks that work best for your app and your team"
 
 To use a custom buildpack in the action, simply add the url of the buildpack to the action:
 

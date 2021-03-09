@@ -9,6 +9,7 @@ Only m1() and m2() do not change the order of the data.
 
 infile = 'in'  # Change filename to suit your needs.
 
+
 def m1():
     s = set()
     with open('out1', 'w') as out:
@@ -16,6 +17,7 @@ def m1():
             if line not in s:
                 out.write(line)
                 s.add(line)
+
 
 def m2():
     s = set()
@@ -26,6 +28,7 @@ def m2():
             s.add(line)
     out.close()
 
+
 def m3():
     s = set()
     for line in open(infile):
@@ -35,15 +38,18 @@ def m3():
         out.write(line)
     out.close()
 
+
 def m4():
     s = set()
     for line in open(infile):
         s.add(line)
     out = open('out4', 'w').writelines(s)
 
+
 def m5():
     uniqlines = set(open(infile).readlines())
     out = open('out5', 'w').writelines(uniqlines)
+
 
 if __name__ == '__main__':
     import timeit

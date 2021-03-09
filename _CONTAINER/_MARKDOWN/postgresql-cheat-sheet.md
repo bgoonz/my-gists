@@ -2,14 +2,14 @@
 ===========================
 ## PostgreSQL commands
 ===========================
-|                                                                                          |                                                        |
-| ------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Access the PostgreSQL server from **psql** with a specific user: `psql -U [username];` | Connect to a specific database:`\c database_name;` |
-| To quit the psql:```\q``` |[List all databases](https://www.postgresqltutorial.com/postgresql-show-databases/) in the PostgreSQL database server```\l``` |
-| List all schemas:```\dn``` |List all [stored procedures](https://www.postgresqltutorial.com/postgresql-stored-procedures/) and functions:```\df``` |
-|List all [views](https://www.postgresqltutorial.com/postgresql-views/):```\dv```|[Lists all tables](https://www.postgresqltutorial.com/postgresql-show-tables/) in a current database.```\dt```|
-|Or to get more information on tables in the current database:```\dt+```|Get detailed information on a table.```\d+ table_name```|Show a [stored procedure](https://www.postgresqltutorial.com/postgresql-stored-procedures/) or function code:```\df+ function_name```|
-Show query output in the pretty-format:```\x```|List all users:```\du```
+|                                                                                        |                                                                                                                               |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Access the PostgreSQL server from **psql** with a specific user: `psql -U [username];` | Connect to a specific database:`\c database_name;`                                                                            |
+| To quit the psql:```\q```                                                              | [List all databases](https://www.postgresqltutorial.com/postgresql-show-databases/) in the PostgreSQL database server```\l``` |
+| List all schemas:```\dn```                                                             | List all [stored procedures](https://www.postgresqltutorial.com/postgresql-stored-procedures/) and functions:```\df```        |
+| List all [views](https://www.postgresqltutorial.com/postgresql-views/):```\dv```       | [Lists all tables](https://www.postgresqltutorial.com/postgresql-show-tables/) in a current database.```\dt```                |
+| Or to get more information on tables in the current database:```\dt+```                | Get detailed information on a table.```\d+ table_name```                                                                      | Show a [stored procedure](https://www.postgresqltutorial.com/postgresql-stored-procedures/) or function code:```\df+ function_name``` |
+| Show query output in the pretty-format:```\x```                                        | List all users:```\du```                                                                                                      |
 
 Create a new [role](https://www.postgresqltutorial.com/postgresql-roles/):
 ```

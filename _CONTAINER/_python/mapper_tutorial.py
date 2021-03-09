@@ -10,7 +10,7 @@ url = "https://scrapethissite.com"
 # a queue of urls to be crawled
 new_urls = deque([url])
 
-# a set of urls that we have already been processed 
+# a set of urls that we have already been processed
 processed_urls = set()
 # a set of domains inside the target website
 local_urls = set()
@@ -32,7 +32,7 @@ while len(new_urls):
         # add broken urls to it's own set, then continue
         broken_urls.add(url)
         continue
-    
+
     # extract base url to resolve relative links
     parts = urlsplit(url)
     base = "{0.netloc}".format(parts)
@@ -62,4 +62,4 @@ while len(new_urls):
             if not i in new_urls and not i in processed_urls:
                 new_urls.append(i)
 
-print(processed_urls)  
+print(processed_urls)
