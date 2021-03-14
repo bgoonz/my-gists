@@ -1,3 +1,57 @@
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️-->
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#my-gists)
+
+# ➤ My Gists
+
+--
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#about)
+
+## ➤ About:
+
+
+
+
+
+
+
+---
+Downloading Gists:
+
+```py
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#first-mkdir-user--cd-user--cp-pathtoget_gistspy-)
+
+# ➤ first: mkdir user && cd user && cp /path/to/get_gists.py .
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#python3-get_gistspy-user)
+
+# ➤ python3 get_gists.py user
+import requests
+import sys
+from subprocess import call
+
+user = sys.argv[1]
+
+r = requests.get('https://api.github.com/users/{0}/gists'.format(user))
+
+for i in r.json():
+    call(['git', 'clone', i['git_pull_url']])
+
+    description_file = './{0}/description.txt'.format(i['id'])
+    with open(description_file, 'w') as f:
+        f.write('{0}\n'.format(i['description']))
+
+
+
+
+```
+---
+
+
 ```
 
 .
@@ -366,3 +420,6 @@
 
 56 directories, 306 files
 ```
+
+
+
