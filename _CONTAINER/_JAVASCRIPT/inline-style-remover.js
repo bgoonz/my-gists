@@ -29,14 +29,14 @@ function object2hash(properties){
     let sorted = sort_object_keys(properties);
     let hash = "";
     for(let p in properties){
-        hash += p+":"+properties[p]+";"
+        hash += `${p}:${properties[p]};`
     }
     return hash;
 }
 let g_class_counter = 0;
 function classNameCreator(style){
   g_class_counter++;
-  return "class"+g_class_counter
+  return `class${g_class_counter}`;
 
 }
 // recursively remove the inline styles
@@ -70,7 +70,7 @@ function getFixedCode(node){
     for(let rule in classes){
         let formattedRules = rule.replace(";",";\n\t");
         let className = classes[rule];
-        x+="."+className+"{\n\t" + formattedRules + "\n}\n\n";
+        x+=`.${className}{\n\t${formattedRules}\n}\n\n`;
     }
     x += "</style>\n";
     let y = node.innerHTML;
@@ -85,7 +85,7 @@ function init(){
     for(let rule in classes){
         let formattedRules = rule.replace(";",";\n\t");
         let className = classes[rule];
-        x+="."+className+"{\n\t" + formattedRules + "\n}\n\n";
+        x+=`.${className}{\n\t${formattedRules}\n}\n\n`;
     }
     x += "</style>\n";
     let y = document.getElementById("name").outerHTML;

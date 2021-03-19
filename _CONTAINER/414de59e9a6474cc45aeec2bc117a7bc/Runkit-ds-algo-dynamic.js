@@ -1,4 +1,4 @@
-let countChange = function ( money, coins ) {
+let countChange = (money, coins) => {
   function countChangeSub( money, coins, n ) {
     if ( money == 0 ) return 1;
     if ( money < 0 || coins.length == n ) return 0;
@@ -22,27 +22,28 @@ function waysToReturnChange( denominations, numOfCoins, amount ) {
 
 function waysToReturnMemoize( amount, denominations ) {
   // intialize an array of zeros with indices up to amount
-  var waysOfDoingNcents = [];
-  for ( var i = 0; i <= amount; i++ ) {
+  const waysOfDoingNcents = [];
+  for ( let i = 0; i <= amount; i++ ) {
     waysOfDoingNcents[ i ] = 0;
   }
   // there is 1 way to renturn 0 cents
   waysOfDoingNcents[ 0 ] = 1;
-  for ( var j = 0; j < denominations.length; j++ ) {
-    //  can only start returning change with coins in our denominations
-    var coin = denominations[ j ];
+
+  //  can only start returning change with coins in our denominations
+  denominations.forEach(coin => {
     //  start bottom up, each time reducing change amout with curr coin.
-    for ( var higherAmount = coin; higherAmount <= amount; higherAmount++ ) {
-      var higherAmountRemainder = higherAmount - coin;
+    for ( let higherAmount = coin; higherAmount <= amount; higherAmount++ ) {
+      const higherAmountRemainder = higherAmount - coin;
       // ways to create change is equivalent to reducing the problem to a known problem
       // and gaining all the ways to solve for smaller problems
       waysOfDoingNcents[ higherAmount ] += waysOfDoingNcents[ higherAmountRemainder ];
     }
-  }
+  });
+
   return waysOfDoingNcents[ amount ];
 }
-var denominations = [ 1, 2, 3 ];
-var amount = 4;
+const denominations = [ 1, 2, 3 ];
+const amount = 4;
 console.time( "answer time" );
 console.log( waysToReturnChange( denominations, denominations.length - 1, amount ) );
 console.timeEnd( "answer time" );
@@ -51,18 +52,18 @@ console.log( waysToReturnMemoize( amount, denominations ) );
 console.timeEnd( "answer time1" );
 
 ;
-let makeChange = function ( total ) {
+let makeChange = total => {
 
   let coins = [ 1, 2, 5, 10, 20, 50, 100, 200 ];
   let count = 0;
   //Had to use var to escape block scope
-  for ( var a = total; a >= 0; a -= coins[ coins.length - 1 ] ) {
-    for ( var b = a; b >= 0; b -= coins[ coins.length - 2 ] ) {
-      for ( var c = b; c >= 0; c -= coins[ coins.length - 3 ] ) {
-        for ( var d = c; d >= 0; d -= coins[ coins.length - 4 ] ) {
-          for ( var e = d; e >= 0; e -= coins[ coins.length - 5 ] ) {
-            for ( var f = e; f >= 0; f -= coins[ coins.length - 6 ] ) {
-              for ( var g = f; g >= 0; g -= coins[ coins.length - 7 ] ) {
+  for ( let a = total; a >= 0; a -= coins[ coins.length - 1 ] ) {
+    for ( let b = a; b >= 0; b -= coins[ coins.length - 2 ] ) {
+      for ( let c = b; c >= 0; c -= coins[ coins.length - 3 ] ) {
+        for ( let d = c; d >= 0; d -= coins[ coins.length - 4 ] ) {
+          for ( let e = d; e >= 0; e -= coins[ coins.length - 5 ] ) {
+            for ( let f = e; f >= 0; f -= coins[ coins.length - 6 ] ) {
+              for ( let g = f; g >= 0; g -= coins[ coins.length - 7 ] ) {
                 count++;
               }
             }

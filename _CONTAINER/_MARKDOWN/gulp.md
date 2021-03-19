@@ -14,7 +14,10 @@ That would look like this:
    Content
 
    @@include('./footer.html')
-</body>
+<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body>
 ...
 And you'd process it like:
 

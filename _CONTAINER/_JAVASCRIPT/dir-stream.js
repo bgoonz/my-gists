@@ -1,4 +1,4 @@
-const fs = require( 'fs' )
+import fs from 'fs';
 
 // The async `opendir` method creates a stream from the directory
 // passed as its first argument. The stream is present in the callback

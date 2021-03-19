@@ -8,12 +8,13 @@ common to both firstArr and secondArr.
 function intersection( firstArr ) {
   return ( secondArr ) => {
     let common = [];
-    for ( let i = 0; i < firstArr.length; i++ ) {
-      let el = firstArr[ i ];
-      if ( secondArr.indexOf( el ) > -1 ) {
+
+    for (let el of firstArr) {
+      if ( secondArr.includes(el) ) {
         common.push( el );
       }
     }
+
     return common;
   };
 }

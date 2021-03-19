@@ -45,7 +45,7 @@ class HashTable {
     let string = '';
     for ( let value in this.values ) {
       for ( let key in this.values[ value ] ) {
-        string += this.values[ value ][ key ] + ' ';
+        string += `${this.values[ value ][ key ]} `;
       }
     }
     console.log( string.trim() );

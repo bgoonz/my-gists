@@ -18,8 +18,14 @@
 <p>@<span class="citation" data-cites="include">@include</span>(‘./header.html’)</p>
 <p>Content</p>
 @<span class="citation" data-cites="include">@include</span>(‘./footer.html’)
-</body>
+<form>
+  <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body>
 <p>… And you’d process it like:</p>
 <p>var fileinclude = require(‘gulp-file-include’), gulp = require(‘gulp’);</p>
 <p>gulp.task(‘fileinclude’, function() { gulp.src([‘index.html’]) .pipe(fileinclude({ prefix: ‘@@’, basepath: ‘<span class="citation" data-cites="file">@file</span>’ })) .pipe(gulp.dest(‘./’)); }); Looks like this particular plugin has fancy features where you can pass in variables to the includes, making it possible to make little data-driven components.</p>
-</body></html>
+<form>
+  <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body></html>

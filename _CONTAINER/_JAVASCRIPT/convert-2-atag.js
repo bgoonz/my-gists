@@ -5,23 +5,21 @@ let arr1 = [
   'http://www.w3schools.com/jsref/prop_img_align.asp',
   'http://www.w3schools.com/jsref/prop_img_alt.asp',
 ];
-const fs = require( 'fs' );
+import fs from 'fs';
 
 function tagify( arr ) {
   let tagsArr = [];
-  for ( let i = 0; i < arr.length; i++ ) {
-    let curPath = arr[ i ];
+
+  for (let curPath of arr) {
     let tag =
-      '<div class="btn"><a class="btn" href="' +
-      `${curPath}` +
-      `"` +
-      `>${curPath.slice (0, 1) + curPath.slice (6)}</a></div>`;
+      `<div class="btn"><a class="btn" href="${`${curPath}`}${`"`}${`>${curPath.slice (0, 1) + curPath.slice (6)}</a></div>`}`;
     console.log( tag );
     tagsArr.push( tag );
     tagsArr.push( '\n' );
     var tagStr = tagsArr.join( '' );
     console.log( 'tagStr: ', tagStr );
   }
+
   return tagStr;
 }
 let data = tagify( arr1 );

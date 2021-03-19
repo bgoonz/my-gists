@@ -22,15 +22,35 @@
             width: device-width;
         }
         body {
+  background: linear-gradient(-45deg, #da0000, #0008ffe5, #23d5a2d8, #2f2fbce5);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
             -ms-overflow-style: scrollbar;
-		zoom:0.9;
+		zoom:0.73;
         }
-        @media screen and (max-width: 480px) {
-            html,
-            body {
-             
-            }
-        }
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
         html {
             box-sizing: border-box;
         }
@@ -56,33 +76,19 @@
         }
         /* Type */
         html {
-            font-size: 13pt;
+            font-size: 11pt;
         }
-        @media screen and (max-width: 1680px) {
-            html {
-                font-size: 10pt;
-            }
-        }
-        @media screen and (max-width: 1280px) {
-            html {
-                font-size: 11pt;
-            }
-        }
-        @media screen and (max-width: 360px) {
-            html {
-                font-size: 10pt;
-            }
-        }
+       
         body {
-            color: #212931;
+            color: whitesmoke;
         }
         body,
         input,
         select,
         textarea {
             font-family: "Merriweather", Georgia, serif;
-            font-weight: 300;
-            font-size: 1rem;
+            font-weight: 200;
+            font-size: 0.8rem;
           
         }
         a {
@@ -104,13 +110,13 @@
         }
         BODY {
             background: black font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
+            font-weight: 150;
          
             color: #A7A1AE;
             background-color: #1F2739;
         }
         h1 {
-            font-size: 3em;
+            font-size: 2em;
             font-weight: 300;
          
             text-align: left;
@@ -121,6 +127,7 @@
         }
         A {
             text-decoration: none color:black;
+            overflow-wrap: break-word;
         }
         A:hover {
             color: red;
@@ -133,10 +140,10 @@
             background: #fffefe;
             border-left: 3px solid;
             border-collapse: collapse;
-            margin: 25px 0;
+            margin: 15px 0;
             font-size: 0.8em;
             font-family: sans-serif;
-            min-width: 350px;
+            min-width: 250px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
             border-top: 1px solid;
             border-bottom: 0px solid;
@@ -145,6 +152,7 @@
             width: 80%;
             display: table;
             padding: 0 0 8em 0;
+overflow-wrap: break-word;
         }
         TABLE.fancy TD {
             border-right: 1px solid;
@@ -179,6 +187,7 @@
             -moz-border-radius: 10px;
             -ms-border-radius: 10px;
             -o-border-radius: 20px;
+overflow-wrap: break-word;
         }
         TABLE.fancy tr:nth-child(odd) {
             background-color: #323C50;
@@ -523,28 +532,38 @@ div.clear {
 <body>
 
 <table border="0" cellspacing="0" cellpadding="3" summary="file table" class="fancy centered">
-<tr><td colspan="10" class="dark-blue" style="text-align: center"><b>Folders</b></td></tr>
-<tr><td class="left"><a href="../right.html" target="rframe">&lt;parent&gt;</a></td><td class="left">&nbsp;<a href="15f0936a8fc5c59f011722146f4852b8/right.html" target="rframe">15f0936a8fc5c59f011722146f4852b8</a></td><td class="left">&nbsp;<a href="365d2de3f4a8e453f70c9cac6b74f26f/right.html" target="rframe">365d2de3f4a8e453f70c9cac6b74f26f</a></td><td class="left">&nbsp;<a href="44e66960ba5cc0ffe04ea0499f7c3134/right.html" target="rframe">44e66960ba5cc0ffe04ea0499f7c3134</a></td><td class="left">&nbsp;<a href="6665786ba69d51ac36646421bdc6c06c/right.html" target="rframe">6665786ba69d51ac36646421bdc6c06c</a></td><td class="left">&nbsp;<a href="82154f50603f73826c27377ebaa498b5/right.html" target="rframe">82154f50603f73826c27377ebaa498b5</a></td><td class="left">&nbsp;<a href="af7cddac66b05b47f797a539929e8976/right.html" target="rframe">af7cddac66b05b47f797a539929e8976</a></td><td class="left">&nbsp;<a href="bfbe6abe4ec63107d4bbb74072fc1080/right.html" target="rframe">bfbe6abe4ec63107d4bbb74072fc1080</a></td><td class="left">&nbsp;<a href="d110afc16efa1d28b852e34bcff3da4e/right.html" target="rframe">d110afc16efa1d28b852e34bcff3da4e</a></td><td class="left">&nbsp;<a href="edcbe51ff1cb8b0d1e89d51dc69dcbfb/right.html" target="rframe">edcbe51ff1cb8b0d1e89d51dc69dcbfb</a></td></tr>
-<tr class="row2"><td class="left"><a href="02d3612c59187115f560a78c75e57680/right.html" target="rframe">02d3612c59187115f560a78c75e57680</a></td><td class="left">&nbsp;<a href="166b3c732e281005bb7338bc6d566193/right.html" target="rframe">166b3c732e281005bb7338bc6d566193</a></td><td class="left">&nbsp;<a href="36bb516fe540bbe7c0aa06464f4cab8d/right.html" target="rframe">36bb516fe540bbe7c0aa06464f4cab8d</a></td><td class="left">&nbsp;<a href="48b79d0e098323b694ffbbeb078924e6/right.html" target="rframe">48b79d0e098323b694ffbbeb078924e6</a></td><td class="left">&nbsp;<a href="69bb5ef5e62f9350d2766df123cc6e54/right.html" target="rframe">69bb5ef5e62f9350d2766df123cc6e54</a></td><td class="left">&nbsp;<a href="86949afff1760ed0d5ed3ec44da32b41/right.html" target="rframe">86949afff1760ed0d5ed3ec44da32b41</a></td><td class="left">&nbsp;<a href="afe4976aab8b05ad19775f204f3cfd62/right.html" target="rframe">afe4976aab8b05ad19775f204f3cfd62</a></td><td class="left">&nbsp;<a href="c559a8e4d6fd2eb586b2e8452d6e233b/right.html" target="rframe">c559a8e4d6fd2eb586b2e8452d6e233b</a></td><td class="left">&nbsp;<a href="d5fcc5173fc13774b72544ccc1df6a98/right.html" target="rframe">d5fcc5173fc13774b72544ccc1df6a98</a></td><td class="left">&nbsp;<a href="f07841d4701271218f1817ed12fcbafb/right.html" target="rframe">f07841d4701271218f1817ed12fcbafb</a></td></tr>
-<tr><td class="left"><a href="042b1153d977cfb4c6d948dcb8c52e39/right.html" target="rframe">042b1153d977cfb4c6d948dcb8c52e39</a></td><td class="left">&nbsp;<a href="1a0563c4191927f5035931958f704b68/right.html" target="rframe">1a0563c4191927f5035931958f704b68</a></td><td class="left">&nbsp;<a href="38896d2a01cd9a97a02e98db83e89b71/right.html" target="rframe">38896d2a01cd9a97a02e98db83e89b71</a></td><td class="left">&nbsp;<a href="4e2a040cd94006bb887a77a68f4287b9/right.html" target="rframe">4e2a040cd94006bb887a77a68f4287b9</a></td><td class="left">&nbsp;<a href="6af1b7b3b0e7075cef628bb8497b961f/right.html" target="rframe">6af1b7b3b0e7075cef628bb8497b961f</a></td><td class="left">&nbsp;<a href="8898ad673bd2ecee9d93f8ec267cf213/right.html" target="rframe">8898ad673bd2ecee9d93f8ec267cf213</a></td><td class="left">&nbsp;<a href="b033f820c35869af0869ce712af68bda/right.html" target="rframe">b033f820c35869af0869ce712af68bda</a></td><td class="left">&nbsp;<a href="c7658139004c1e0bc02e0674188eaeb6/right.html" target="rframe">c7658139004c1e0bc02e0674188eaeb6</a></td><td class="left">&nbsp;<a href="d88181af6d0ce040a371ff9ec7c8e1ef/right.html" target="rframe">d88181af6d0ce040a371ff9ec7c8e1ef</a></td><td class="left">&nbsp;<a href="fa4a41ac2ef7d66d5bc2dba07eec7591/right.html" target="rframe">fa4a41ac2ef7d66d5bc2dba07eec7591</a></td></tr>
-<tr class="row2"><td class="left"><a href="07f7172a8538179ac8aa45b2157a9185/right.html" target="rframe">07f7172a8538179ac8aa45b2157a9185</a></td><td class="left">&nbsp;<a href="1ad31003fc1b2880201642b48df87e2e/right.html" target="rframe">1ad31003fc1b2880201642b48df87e2e</a></td><td class="left">&nbsp;<a href="3ac1f86fc096e8097a9a5e4395d36039/right.html" target="rframe">3ac1f86fc096e8097a9a5e4395d36039</a></td><td class="left">&nbsp;<a href="50b1eedffde6353523e0909bcb903330/right.html" target="rframe">50b1eedffde6353523e0909bcb903330</a></td><td class="left">&nbsp;<a href="6c588fd38747ce47ab84040c9e686d07/right.html" target="rframe">6c588fd38747ce47ab84040c9e686d07</a></td><td class="left">&nbsp;<a href="8d3ba6828f5ba9a4692d0a938697099f/right.html" target="rframe">8d3ba6828f5ba9a4692d0a938697099f</a></td><td class="left">&nbsp;<a href="b0aae5c4079596820e37c98265f45539/right.html" target="rframe">b0aae5c4079596820e37c98265f45539</a></td><td class="left">&nbsp;<a href="c9fc5460aaf86fa752eeb5a9120634c0/right.html" target="rframe">c9fc5460aaf86fa752eeb5a9120634c0</a></td><td class="left">&nbsp;<a href="de05ada6da193c8a13bed59451290f0b/right.html" target="rframe">de05ada6da193c8a13bed59451290f0b</a></td><td class="left">&nbsp;<a href="HTML/right.html" target="rframe">HTML</a></td></tr>
-<tr><td class="left"><a href="09115567409c7b2fd3a455ca29bfe3fc/right.html" target="rframe">09115567409c7b2fd3a455ca29bfe3fc</a></td><td class="left">&nbsp;<a href="1b9ae0955205e4d7aaf4701a94185ff4/right.html" target="rframe">1b9ae0955205e4d7aaf4701a94185ff4</a></td><td class="left">&nbsp;<a href="3d369ac15bccbb30ae24243a1af9c3ac/right.html" target="rframe">3d369ac15bccbb30ae24243a1af9c3ac</a></td><td class="left">&nbsp;<a href="51714f703eba19ad65fb897068bc65c9/right.html" target="rframe">51714f703eba19ad65fb897068bc65c9</a></td><td class="left">&nbsp;<a href="6d82ba2d67954922ddad6607f0ae18d9/right.html" target="rframe">6d82ba2d67954922ddad6607f0ae18d9</a></td><td class="left">&nbsp;<a href="9307f60ec7a5e7827184a70d05012067/right.html" target="rframe">9307f60ec7a5e7827184a70d05012067</a></td><td class="left">&nbsp;<a href="b13743e00e7684ca220f66635803a7d5/right.html" target="rframe">b13743e00e7684ca220f66635803a7d5</a></td><td class="left">&nbsp;<a href="ca7a48c316345f6f7acd9383e13fb23e/right.html" target="rframe">ca7a48c316345f6f7acd9383e13fb23e</a></td><td class="left">&nbsp;<a href="e7b3e62408aaf51922cccb8405760bb5/right.html" target="rframe">e7b3e62408aaf51922cccb8405760bb5</a></td><td class="left">&nbsp;<a href="_BASH/right.html" target="rframe">_BASH</a></td></tr>
-<tr class="row2"><td class="left"><a href="0d4010f180dbbe3e97b45b604317f6d7/right.html" target="rframe">0d4010f180dbbe3e97b45b604317f6d7</a></td><td class="left">&nbsp;<a href="22ba574c318b387aa6ac200a756cf4fb/right.html" target="rframe">22ba574c318b387aa6ac200a756cf4fb</a></td><td class="left">&nbsp;<a href="40479d5c41c585bb1fe000a0f83fd7d5/right.html" target="rframe">40479d5c41c585bb1fe000a0f83fd7d5</a></td><td class="left">&nbsp;<a href="53d120a0fbdd46a13c59f76e5f3a2eec/right.html" target="rframe">53d120a0fbdd46a13c59f76e5f3a2eec</a></td><td class="left">&nbsp;<a href="6ef1e9e5723b60b98910ba3648b69380/right.html" target="rframe">6ef1e9e5723b60b98910ba3648b69380</a></td><td class="left">&nbsp;<a href="94905bc0d9f1feb9954c3442761973e7/right.html" target="rframe">94905bc0d9f1feb9954c3442761973e7</a></td><td class="left">&nbsp;<a href="b2a934289a677f337a72bcd7751a55df/right.html" target="rframe">b2a934289a677f337a72bcd7751a55df</a></td><td class="left">&nbsp;<a href="cae36a07000d5dec8769d0e8cbc431b3/right.html" target="rframe">cae36a07000d5dec8769d0e8cbc431b3</a></td><td class="left">&nbsp;<a href="e8d986746603502a075f25c33f88f732/right.html" target="rframe">e8d986746603502a075f25c33f88f732</a></td><td class="left">&nbsp;<a href="_JAVASCRIPT/right.html" target="rframe">_JAVASCRIPT</a></td></tr>
-<tr><td class="left"><a href="1087fe7c9d2e32f90c3cb28ccef20ba0/right.html" target="rframe">1087fe7c9d2e32f90c3cb28ccef20ba0</a></td><td class="left">&nbsp;<a href="24632d1017733d8de75a197d0a97889e/right.html" target="rframe">24632d1017733d8de75a197d0a97889e</a></td><td class="left">&nbsp;<a href="414de59e9a6474cc45aeec2bc117a7bc/right.html" target="rframe">414de59e9a6474cc45aeec2bc117a7bc</a></td><td class="left">&nbsp;<a href="5864435b9041997efe6b14ea633871b8/right.html" target="rframe">5864435b9041997efe6b14ea633871b8</a></td><td class="left">&nbsp;<a href="7065a52f96e241439d2cbc4137b6e1d7/right.html" target="rframe">7065a52f96e241439d2cbc4137b6e1d7</a></td><td class="left">&nbsp;<a href="a3c27a5126ed87a5f708b11bb3032994/right.html" target="rframe">a3c27a5126ed87a5f708b11bb3032994</a></td><td class="left">&nbsp;<a href="b5d026f60e899b6e8e0ab5ad9bf3bb82/right.html" target="rframe">b5d026f60e899b6e8e0ab5ad9bf3bb82</a></td><td class="left">&nbsp;<a href="cdb893d3a4d980ab9a562aa9b45b0b33/right.html" target="rframe">cdb893d3a4d980ab9a562aa9b45b0b33</a></td><td class="left">&nbsp;<a href="e9eeb8ae2b3c45e0f6368248d1a41bc4/right.html" target="rframe">e9eeb8ae2b3c45e0f6368248d1a41bc4</a></td><td class="left">&nbsp;<a href="_MARKDOWN/right.html" target="rframe">_MARKDOWN</a></td></tr>
-<tr class="row2"><td class="left"><a href="15496cd2043c6ff5380ffefb04cf4377/right.html" target="rframe">15496cd2043c6ff5380ffefb04cf4377</a></td><td class="left">&nbsp;<a href="2b8a7b0c645e20188f13c742e8ee09f2/right.html" target="rframe">2b8a7b0c645e20188f13c742e8ee09f2</a></td><td class="left">&nbsp;<a href="42a46d97654db0e6c6eef77f80b59606/right.html" target="rframe">42a46d97654db0e6c6eef77f80b59606</a></td><td class="left">&nbsp;<a href="5ddc129e1e27bce575afa09c082a24b9/right.html" target="rframe">5ddc129e1e27bce575afa09c082a24b9</a></td><td class="left">&nbsp;<a href="74c3cbe6710415e63e42759b98221769/right.html" target="rframe">74c3cbe6710415e63e42759b98221769</a></td><td class="left">&nbsp;<a href="a60b88ec9ecce568fb1a6d1bcc1bec81/right.html" target="rframe">a60b88ec9ecce568fb1a6d1bcc1bec81</a></td><td class="left">&nbsp;<a href="b8eb08d8065456540618860621143dfc/right.html" target="rframe">b8eb08d8065456540618860621143dfc</a></td><td class="left">&nbsp;<a href="d0d4805c0622c147a509f8e11aff5d30/right.html" target="rframe">d0d4805c0622c147a509f8e11aff5d30</a></td><td class="left">&nbsp;<a href="ed42c5c0f3a1a7757b33b437a9ad7129/right.html" target="rframe">ed42c5c0f3a1a7757b33b437a9ad7129</a></td><td class="left">&nbsp;<a href="_python/right.html" target="rframe">_python</a></td></tr>
-<tr><td class="left"><a href="15871d71b1048975bbb32da20da66bd8/right.html" target="rframe">15871d71b1048975bbb32da20da66bd8</a></td><td class="left">&nbsp;<a href="3623344a6292e5210c9a11307a5549e6/right.html" target="rframe">3623344a6292e5210c9a11307a5549e6</a></td><td class="left">&nbsp;<a href="4498a4afd53dee1972864e35bd31a5ca/right.html" target="rframe">4498a4afd53dee1972864e35bd31a5ca</a></td><td class="left">&nbsp;<a href="60a1ac977059e4dd5827c34fd0dbdcc4/right.html" target="rframe">60a1ac977059e4dd5827c34fd0dbdcc4</a></td><td class="left">&nbsp;<a href="75fa08d1983b804b1665e9c08de0725a/right.html" target="rframe">75fa08d1983b804b1665e9c08de0725a</a></td><td class="left">&nbsp;<a href="ac7c525ffa115ac8687a838b55a9d2c5/right.html" target="rframe">ac7c525ffa115ac8687a838b55a9d2c5</a></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td></tr>
+<tr><td colspan="6" class="dark-blue" style="text-align: center"><b>Folders</b></td></tr>
+<tr><td class="left"><a href="../right.html" target="rframe">&lt;Go Back&gt;</a></td><td class="left">&nbsp;<a href="40479d5c41c585bb1fe000a0f83fd7d5/right.html" target="rframe">40479d5c...fd7d5</a></td><td class="left">&nbsp;<a href="99f66412d015655eba6491ea4d323c86/right.html" target="rframe">99f66412...23c86</a></td><td class="left">&nbsp;<a href="badb93189a0986ff5de2f904f7173bbf/right.html" target="rframe">badb9318...73bbf</a></td><td class="left">&nbsp;<a href="fancyCSSheaders/right.html" target="rframe">fancyCSSheaders</a></td><td class="left">&nbsp;<a href="pypractice/right.html" target="rframe">pypractice</a></td></tr>
+<tr class="row2"><td class="left"><a href="09115567409c7b2fd3a455ca29bfe3fc/right.html" target="rframe">09115567...fe3fc</a></td><td class="left">&nbsp;<a href="414de59e9a6474cc45aeec2bc117a7bc/right.html" target="rframe">414de59e...7a7bc</a></td><td class="left">&nbsp;<a href="9ec834a65a711c2ce871433a6fec896d/right.html" target="rframe">9ec834a6...c896d</a></td><td class="left">&nbsp;<a href="bigO/right.html" target="rframe">bigO</a></td><td class="left">&nbsp;<a href="fb104c5834e2ce32778b162923ef68fd/right.html" target="rframe">fb104c58...f68fd</a></td><td class="left">&nbsp;<a href="readsplitonnewline/right.html" target="rframe">readspli...wline</a></td></tr>
+<tr><td class="left"><a href="0c5b086aab9e9d90ae047b785c797248/right.html" target="rframe">0c5b086a...97248</a></td><td class="left">&nbsp;<a href="4498a4afd53dee1972864e35bd31a5ca/right.html" target="rframe">4498a4af...1a5ca</a></td><td class="left">&nbsp;<a href="a3c27a5126ed87a5f708b11bb3032994/right.html" target="rframe">a3c27a51...32994</a></td><td class="left">&nbsp;<a href="boilerplateCSS/right.html" target="rframe">boilerplateCSS</a></td><td class="left">&nbsp;<a href="get-gistpy/right.html" target="rframe">get-gistpy</a></td><td class="left">&nbsp;<a href="refactored-js/right.html" target="rframe">refactored-js</a></td></tr>
+<tr class="row2"><td class="left"><a href="0c6a0ab49e05b7d43421a6e4aa2c8dd9/right.html" target="rframe">0c6a0ab4...c8dd9</a></td><td class="left">&nbsp;<a href="4c038ce77876ed0de6017591b744da2a/right.html" target="rframe">4c038ce7...4da2a</a></td><td class="left">&nbsp;<a href="a60b88ec9ecce568fb1a6d1bcc1bec81/right.html" target="rframe">a60b88ec...bec81</a></td><td class="left">&nbsp;<a href="bstjs/right.html" target="rframe">bstjs</a></td><td class="left">&nbsp;<a href="graph-notes/right.html" target="rframe">graph-notes</a></td><td class="left">&nbsp;<a href="restart-docker/right.html" target="rframe">restart-docker</a></td></tr>
+<tr><td class="left"><a href="1087fe7c9d2e32f90c3cb28ccef20ba0/right.html" target="rframe">1087fe7c...20ba0</a></td><td class="left">&nbsp;<a href="4ed10f6331a4f138c04edc9122330306/right.html" target="rframe">4ed10f63...30306</a></td><td class="left">&nbsp;<a href="a72b7fde32ef3b166dc8e7e1a9f90b1e/right.html" target="rframe">a72b7fde...90b1e</a></td><td class="left">&nbsp;<a href="c559a8e4d6fd2eb586b2e8452d6e233b/right.html" target="rframe">c559a8e4...e233b</a></td><td class="left">&nbsp;<a href="heroku-git-workflow/right.html" target="rframe">heroku-g...kflow</a></td><td class="left">&nbsp;<a href="rotate/right.html" target="rframe">rotate</a></td></tr>
+<tr class="row2"><td class="left"><a href="15496cd2043c6ff5380ffefb04cf4377/right.html" target="rframe">15496cd2...f4377</a></td><td class="left">&nbsp;<a href="51714f703eba19ad65fb897068bc65c9/right.html" target="rframe">51714f70...c65c9</a></td><td class="left">&nbsp;<a href="abe176b2208904700b0f85e591cfcd37/right.html" target="rframe">abe176b2...fcd37</a></td><td class="left">&nbsp;<a href="c626ee3127dd4385ee87c91e3bb44272/right.html" target="rframe">c626ee31...44272</a></td><td class="left">&nbsp;<a href="HTML/right.html" target="rframe">HTML</a></td><td class="left">&nbsp;<a href="setjs/right.html" target="rframe">setjs</a></td></tr>
+<tr><td class="left"><a href="15871d71b1048975bbb32da20da66bd8/right.html" target="rframe">15871d71...66bd8</a></td><td class="left">&nbsp;<a href="55aa94be2dc4c8968e874ebf0d171fbf/right.html" target="rframe">55aa94be...71fbf</a></td><td class="left">&nbsp;<a href="ac7c525ffa115ac8687a838b55a9d2c5/right.html" target="rframe">ac7c525f...9d2c5</a></td><td class="left">&nbsp;<a href="c7658139004c1e0bc02e0674188eaeb6/right.html" target="rframe">c7658139...eaeb6</a></td><td class="left">&nbsp;<a href="inline-style-remover/right.html" target="rframe">inline-s...mover</a></td><td class="left">&nbsp;<a href="singleLinkedList/right.html" target="rframe">singleLinkedList</a></td></tr>
+<tr class="row2"><td class="left"><a href="15a638abb3b4026abc8e5ca05f8d90f1/right.html" target="rframe">15a638ab...d90f1</a></td><td class="left">&nbsp;<a href="5864435b9041997efe6b14ea633871b8/right.html" target="rframe">5864435b...871b8</a></td><td class="left">&nbsp;<a href="add-line-numbers/right.html" target="rframe">add-line-numbers</a></td><td class="left">&nbsp;<a href="c9fc5460aaf86fa752eeb5a9120634c0/right.html" target="rframe">c9fc5460...634c0</a></td><td class="left">&nbsp;<a href="jsisweird/right.html" target="rframe">jsisweird</a></td><td class="left">&nbsp;<a href="sortingjava/right.html" target="rframe">sortingjava</a></td></tr>
+<tr><td class="left"><a href="166b3c732e281005bb7338bc6d566193/right.html" target="rframe">166b3c73...66193</a></td><td class="left">&nbsp;<a href="5e9625deb5c141fe4835db9ac32df6df/right.html" target="rframe">5e9625de...df6df</a></td><td class="left">&nbsp;<a href="af7cddac66b05b47f797a539929e8976/right.html" target="rframe">af7cddac...e8976</a></td><td class="left">&nbsp;<a href="check.yml/right.html" target="rframe">check.yml</a></td><td class="left">&nbsp;<a href="jsmethods/right.html" target="rframe">jsmethods</a></td><td class="left">&nbsp;<a href="sql/right.html" target="rframe">sql</a></td></tr>
+<tr class="row2"><td class="left"><a href="1ac585343a0ff4c87083cc9b81880ff0/right.html" target="rframe">1ac58534...80ff0</a></td><td class="left">&nbsp;<a href="6665786ba69d51ac36646421bdc6c06c/right.html" target="rframe">6665786b...6c06c</a></td><td class="left">&nbsp;<a href="afe4976aab8b05ad19775f204f3cfd62/right.html" target="rframe">afe4976a...cfd62</a></td><td class="left">&nbsp;<a href="clonewars/right.html" target="rframe">clonewars</a></td><td class="left">&nbsp;<a href="jsobjects/right.html" target="rframe">jsobjects</a></td><td class="left">&nbsp;<a href="tictactoe/right.html" target="rframe">tictactoe</a></td></tr>
+<tr><td class="left"><a href="24632d1017733d8de75a197d0a97889e/right.html" target="rframe">24632d10...7889e</a></td><td class="left">&nbsp;<a href="7065a52f96e241439d2cbc4137b6e1d7/right.html" target="rframe">7065a52f...6e1d7</a></td><td class="left">&nbsp;<a href="altwebdevsetup/right.html" target="rframe">altwebdevsetup</a></td><td class="left">&nbsp;<a href="coppy-array-js/right.html" target="rframe">coppy-array-js</a></td><td class="left">&nbsp;<a href="jssnippets/right.html" target="rframe">jssnippets</a></td><td class="left">&nbsp;<a href="trouble-shooting2/right.html" target="rframe">trouble-...ting2</a></td></tr>
+<tr class="row2"><td class="left"><a href="25b5f0b448c32fac009c731c2f8e5dd2/right.html" target="rframe">25b5f0b4...e5dd2</a></td><td class="left">&nbsp;<a href="75fa08d1983b804b1665e9c08de0725a/right.html" target="rframe">75fa08d1...0725a</a></td><td class="left">&nbsp;<a href="arrayADS/right.html" target="rframe">arrayADS</a></td><td class="left">&nbsp;<a href="de05ada6da193c8a13bed59451290f0b/right.html" target="rframe">de05ada6...90f0b</a></td><td class="left">&nbsp;<a href="linkedlist/right.html" target="rframe">linkedlist</a></td><td class="left">&nbsp;<a href="troubleshooting/right.html" target="rframe">troubleshooting</a></td></tr>
+<tr><td class="left"><a href="29308dc8327817d6edc38d4add4f895a/right.html" target="rframe">29308dc8...f895a</a></td><td class="left">&nbsp;<a href="7758ba211dc4f5d1483f42779b2af11f/right.html" target="rframe">7758ba21...af11f</a></td><td class="left">&nbsp;<a href="b0aae5c4079596820e37c98265f45539/right.html" target="rframe">b0aae5c4...45539</a></td><td class="left">&nbsp;<a href="deploy-react-2-heroku/right.html" target="rframe">deploy-r...eroku</a></td><td class="left">&nbsp;<a href="makefile/right.html" target="rframe">makefile</a></td><td class="left">&nbsp;<a href="troubleshooting3/right.html" target="rframe">troubleshooting3</a></td></tr>
+<tr class="row2"><td class="left"><a href="31279537e09dfac98982d04caa677125/right.html" target="rframe">31279537...77125</a></td><td class="left">&nbsp;<a href="82154f50603f73826c27377ebaa498b5/right.html" target="rframe">82154f50...498b5</a></td><td class="left">&nbsp;<a href="b13743e00e7684ca220f66635803a7d5/right.html" target="rframe">b13743e0...3a7d5</a></td><td class="left">&nbsp;<a href="dfa02a83732b32e37e801f7d490e660b/right.html" target="rframe">dfa02a83...e660b</a></td><td class="left">&nbsp;<a href="markdown-formatting-github/right.html" target="rframe">markdown...ithub</a></td><td class="left">&nbsp;<a href="write-n-replace/right.html" target="rframe">write-n-replace</a></td></tr>
+<tr><td class="left"><a href="3623344a6292e5210c9a11307a5549e6/right.html" target="rframe">3623344a...549e6</a></td><td class="left">&nbsp;<a href="8464c7bbcebc41ad741e9ebb04783885/right.html" target="rframe">8464c7bb...83885</a></td><td class="left">&nbsp;<a href="b2331cb46df9e6d2fa42165f81fdb827/right.html" target="rframe">b2331cb4...db827</a></td><td class="left">&nbsp;<a href="Dom-vs-Bom/right.html" target="rframe">Dom-vs-Bom</a></td><td class="left">&nbsp;<a href="medium-footer/right.html" target="rframe">medium-footer</a></td><td class="left">&nbsp;<a href="_BASH/right.html" target="rframe">_BASH</a></td></tr>
+<tr class="row2"><td class="left"><a href="365d2de3f4a8e453f70c9cac6b74f26f/right.html" target="rframe">365d2de3...4f26f</a></td><td class="left">&nbsp;<a href="86949afff1760ed0d5ed3ec44da32b41/right.html" target="rframe">86949aff...32b41</a></td><td class="left">&nbsp;<a href="b2a934289a677f337a72bcd7751a55df/right.html" target="rframe">b2a93428...a55df</a></td><td class="left">&nbsp;<a href="doubly-linked-list/right.html" target="rframe">doubly-l...-list</a></td><td class="left">&nbsp;<a href="module-exports/right.html" target="rframe">module-exports</a></td><td class="left">&nbsp;<a href="_JAVASCRIPT/right.html" target="rframe">_JAVASCRIPT</a></td></tr>
+<tr><td class="left"><a href="368eefbb756bc5cb9a4c45844f351f37/right.html" target="rframe">368eefbb...51f37</a></td><td class="left">&nbsp;<a href="8898ad673bd2ecee9d93f8ec267cf213/right.html" target="rframe">8898ad67...cf213</a></td><td class="left">&nbsp;<a href="b5d026f60e899b6e8e0ab5ad9bf3bb82/right.html" target="rframe">b5d026f6...3bb82</a></td><td class="left">&nbsp;<a href="ec9166d7579763daa9f234bdae178a98/right.html" target="rframe">ec9166d7...78a98</a></td><td class="left">&nbsp;<a href="mongodb/right.html" target="rframe">mongodb</a></td><td class="left">&nbsp;<a href="_MARKDOWN/right.html" target="rframe">_MARKDOWN</a></td></tr>
+<tr class="row2"><td class="left"><a href="36bb516fe540bbe7c0aa06464f4cab8d/right.html" target="rframe">36bb516f...cab8d</a></td><td class="left">&nbsp;<a href="9307f60ec7a5e7827184a70d05012067/right.html" target="rframe">9307f60e...12067</a></td><td class="left">&nbsp;<a href="b8eb08d8065456540618860621143dfc/right.html" target="rframe">b8eb08d8...43dfc</a></td><td class="left">&nbsp;<a href="f034871ec7577b33f930a892c7911e6b/right.html" target="rframe">f034871e...11e6b</a></td><td class="left">&nbsp;<a href="pyenum2string/right.html" target="rframe">pyenum2string</a></td><td class="left">&nbsp;<a href="_python/right.html" target="rframe">_python</a></td></tr>
+<tr><td class="left"><a href="38896d2a01cd9a97a02e98db83e89b71/right.html" target="rframe">38896d2a...89b71</a></td><td class="left">&nbsp;<a href="94905bc0d9f1feb9954c3442761973e7/right.html" target="rframe">94905bc0...973e7</a></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td></tr>
 </table>
 <br>
 
 <table border="0" cellspacing="0" cellpadding="3" summary="file table" class="fancy centered">
-<tr><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th></tr>
+<tr><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th><th><b>File</b></th></tr>
 <tr><td class="left"><a href="Capture.PNG">Capture.PNG</a>&nbsp;</td><td class="left"><a href="right.html">right.html</a>&nbsp;</td><td class="left"><a href="get-gists.py">get-gists.py</a>&nbsp;</td></tr>
 </table>
 
 <p style="font-weight: bold; margin-bottom: 0px">
-Folders:  86<br>
+Folders:  110<br>
 Files: 3<br>
-Size of all files: 38647 K</p>
+Size of all files: 36315 KB</p>
 
 </body>
 </html>

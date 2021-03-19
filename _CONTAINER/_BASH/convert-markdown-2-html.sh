@@ -17,4 +17,7 @@ for f in *.html; do printf '%s\n' 0a '<!DOCTYPE html>
 <script async defer src="./prism.js"></script>
 </head>
 <body>;' . x | ex "$f"; done
-echo "</body></html>" | tee -a *.html
+echo "<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body></html>" | tee -a *.html

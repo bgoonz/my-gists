@@ -123,7 +123,7 @@ class Graph {
 
   print() {
     console.log( this.vertices.map( function ( vertex ) {
-      return ( vertex + ' -> ' + this.edges[ vertex ].join( ', ' ) ).trim();
+      return ( `${vertex} -> ${this.edges[ vertex ].join( ', ' )}` ).trim();
     }, this ).join( ' | ' ) );
   }
 }

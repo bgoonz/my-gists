@@ -74,7 +74,7 @@ class Tree {
   traverseDFS( fn, method ) {
     let current = this.root;
     if ( method ) {
-      this[ '_' + method ]( current, fn );
+      this[ `_${method}` ]( current, fn );
     } else {
       this._preOrder( current, fn );
     }
@@ -100,7 +100,7 @@ class Tree {
     let string = '';
     while ( queue.length ) {
       let node = queue.shift();
-      string += node.data.toString() + ' ';
+      string += `${node.data.toString()} `;
       if ( node === newline && queue.length ) {
         queue.push( newline );
       }
@@ -144,16 +144,16 @@ tree.printByLevel(); // => ceo \n cto cfo cmo \n dev1 dev2 dev3 accountant
 console.log( 'tree contains dev1 is true:', tree.contains( 'dev1' ) ); // => true
 console.log( 'tree contains dev4 is false:', tree.contains( 'dev4' ) ); // => false
 console.log( '--- BFS' );
-tree.traverseBFS( node => {
-  console.log( node.data );
+tree.traverseBFS( ({data}) => {
+  console.log( data );
 } ); // => ceo cto cfo cmo dev1 dev2 dev3 accountant
 console.log( '--- DFS preOrder' );
-tree.traverseDFS( node => {
-  console.log( node.data );
+tree.traverseDFS( ({data}) => {
+  console.log( data );
 }, 'preOrder' ); // => ceo cto dev1 dev2 dev3 cfo accountant cmo
 console.log( '--- DFS postOrder' );
-tree.traverseDFS( node => {
-  console.log( node.data );
+tree.traverseDFS( ({data}) => {
+  console.log( data );
 }, 'postOrder' ); // => dev1 dev2 dev3 cto accountant cfo cmo ceo
 tree.remove( 'cmo' );
 tree.print(); // => ceo | cto cfo | dev1 dev2 dev3 accountant

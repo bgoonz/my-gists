@@ -85,7 +85,10 @@ echo '  </style>'
 
   echo "</ul>"
 
-  echo "</body>"
+  echo "<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body>"
 
   echo "</html>"
 

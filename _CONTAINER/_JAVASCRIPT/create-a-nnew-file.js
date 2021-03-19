@@ -1,6 +1,6 @@
 // change-some-file.js
 
-const fs = require( "fs" );
+import fs from "fs";
 
 fs.writeFile( "foo.txt", "Hello world!", "utf8", err => {
   if ( err ) {

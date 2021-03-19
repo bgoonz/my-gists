@@ -52,7 +52,10 @@
     <head>
         <script type="text/javascript" src="dom-ready-script.js"></script>
     </head>
-    <body></body>
+    <body><form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body>
     <html></html>
     </html>
     ```

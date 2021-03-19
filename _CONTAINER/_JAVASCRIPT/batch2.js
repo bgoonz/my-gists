@@ -96,8 +96,8 @@ mapString( 'lorem ipsum', c => c.toUpperCase() ); // 'LOREM IPSUM'
 
 
 const median = arr => {
-  const mid = Math.floor( arr.length / 2 ),
-    nums = [ ...arr ].sort( ( a, b ) => a - b );
+  const mid = Math.floor( arr.length / 2 );
+  const nums = [ ...arr ].sort( ( a, b ) => a - b );
   return arr.length % 2 !== 0 ? nums[ mid ] : ( nums[ mid - 1 ] + nums[ mid ] ) / 2;
 };
 
@@ -132,8 +132,8 @@ mergeSort( [ 5, 1, 4, 2, 3 ] ); // [1, 2, 3, 4, 5]
 
 
 const mergeSortedArrays = ( a, b ) => {
-  const _a = [ ...a ],
-    _b = [ ...b ];
+  const _a = [ ...a ];
+  const _b = [ ...b ];
   return Array.from( {
     length: _a.length + _b.length
   }, () => {
@@ -298,8 +298,8 @@ prefersLightColorScheme(); // true
 
 
 const primeFactors = n => {
-  let a = [],
-    f = 2;
+  let a = [];
+  let f = 2;
   while ( n > 1 ) {
     if ( n % f === 0 ) {
       a.push( f );
@@ -322,11 +322,14 @@ primeFactors( 147 ); // [3, 7, 7]
 const primes = num => {
   let arr = Array.from( {
       length: num - 1
-    } ).map( ( x, i ) => i + 2 ),
-    sqroot = Math.floor( Math.sqrt( num ) ),
-    numsTillSqroot = Array.from( {
-      length: sqroot - 1
     } ).map( ( x, i ) => i + 2 );
+
+  let sqroot = Math.floor( Math.sqrt( num ) );
+
+  let numsTillSqroot = Array.from( {
+    length: sqroot - 1
+  } ).map( ( x, i ) => i + 2 );
+
   numsTillSqroot.forEach( x => ( arr = arr.filter( y => y % x !== 0 || y === x ) ) );
   return arr;
 };
@@ -390,7 +393,7 @@ randomAlphaNumeric( 5 ); // '0afad'
 
 const randomHexColorCode = () => {
   let n = ( Math.random() * 0xfffff * 1000000 ).toString( 16 );
-  return '#' + n.slice( 0, 6 );
+  return `#${n.slice( 0, 6 )}`;
 };
 
 //--------------------------------
@@ -600,7 +603,7 @@ sortedIndexBy( [ {
   x: 5
 } ], {
   x: 4
-}, o => o.x ); // 0
+}, ({x}) => x ); // 0
 
 //--------------------------------
 
@@ -640,7 +643,7 @@ sortedLastIndexBy( [ {
   x: 5
 } ], {
   x: 4
-}, o => o.x ); // 1
+}, ({x}) => x ); // 1
 
 //--------------------------------
 

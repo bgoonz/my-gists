@@ -1,4 +1,4 @@
-const fs = require( 'fs' )
+import fs from 'fs';
 
 fs.mkdir( './newdir', err => {
       if ( err ) {

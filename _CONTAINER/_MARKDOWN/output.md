@@ -170,7 +170,10 @@ sanitize_dir '/path/to/somewhere'
 ```bash
 for f in * ; do 
   mv "$f" "$f.html"
-doneecho "</body></html>" | tee -a *.html  
+doneecho "<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body></html>" | tee -a *.html  
 ```
 
 ------
@@ -289,7 +292,10 @@ for f in *.html; do printf '%s\n' 0a '<!DOCTYPE html>
 <script async defer src="./prism.js"></script>
 </head>
 <body>;' . x | ex "$f"; done
-echo "</body></html>" | tee -a *.html
+echo "<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body></html>" | tee -a *.html
 ```
 
 ------
@@ -425,7 +431,10 @@ echo '  </style>'
 
   echo "</ul>"
 
-  echo "</body>"
+  echo "<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>
+  </body>"
 
   echo "</html>"
 
