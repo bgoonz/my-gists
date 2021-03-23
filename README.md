@@ -72,7 +72,7 @@ for i in r.json():
 │   ├── 042b1153d977cfb4c6d948dcb8c52e39
 │   │   ├── description.txt
 │   │   ├── javascript-is-weird.js
-│   │   └── right.html
+│   │   
 │   ├── 09115567409c7b2fd3a455ca29bfe3fc
 │   │   ├── READFILE.js
 │   │   ├── convert-2-atag.js
@@ -88,7 +88,7 @@ for i in r.json():
 │   ├── 0d4010f180dbbe3e97b45b604317f6d7
 │   │   ├── description.txt
 │   │   ├── heroku-github-workflow.md
-│   │   └── right.html
+│   │   
 │   ├── 1087fe7c9d2e32f90c3cb28ccef20ba0
 │   │   ├── Board.html
 │   │   ├── description.txt
@@ -98,7 +98,7 @@ for i in r.json():
 │   ├── 15496cd2043c6ff5380ffefb04cf4377
 │   │   ├── description.txt
 │   │   ├── list-of-public-apis.md
-│   │   └── right.html
+│   │   
 │   ├── 15871d71b1048975bbb32da20da66bd8
 │   │   ├── description.txt
 │   │   ├── right.html
@@ -106,7 +106,7 @@ for i in r.json():
 │   ├── 15f0936a8fc5c59f011722146f4852b8
 │   │   ├── DOM-VS-BOM.md
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── 166b3c732e281005bb7338bc6d566193
 │   │   ├── description.txt
 │   │   ├── right.html
@@ -114,24 +114,24 @@ for i in r.json():
 │   ├── 1ad31003fc1b2880201642b48df87e2e
 │   │   ├── description.txt
 │   │   ├── refactored.js
-│   │   └── right.html
+│   │   
 │   ├── 1b9ae0955205e4d7aaf4701a94185ff4
 │   │   ├── description.txt
 │   │   ├── mongo-dp-experiment.js
-│   │   └── right.html
+│   │   
 │   ├── 22ba574c318b387aa6ac200a756cf4fb
 │   │   ├── description.txt
 │   │   ├── get-gists.py
 │   │   ├── memoize.py
-│   │   └── right.html
+│   │   
 │   ├── 24632d1017733d8de75a197d0a97889e
 │   │   ├── description.txt
 │   │   ├── mapper_tutorial.py
-│   │   └── right.html
+│   │   
 │   ├── 3623344a6292e5210c9a11307a5549e6
 │   │   ├── description.txt
 │   │   ├── readfile.js
-│   │   └── right.html
+│   │   
 │   ├── 365d2de3f4a8e453f70c9cac6b74f26f
 │   │   ├── browser-feature-detections.js
 │   │   ├── description.txt
@@ -140,7 +140,7 @@ for i in r.json():
 │   ├── 38896d2a01cd9a97a02e98db83e89b71
 │   │   ├── description.txt
 │   │   ├── regex-quick-sheet.md
-│   │   └── right.html
+│   │   
 │   ├── 3d369ac15bccbb30ae24243a1af9c3ac
 │   │   ├── description.txt
 │   │   ├── right.html
@@ -153,23 +153,23 @@ for i in r.json():
 │   ├── 414de59e9a6474cc45aeec2bc117a7bc
 │   │   ├── Runkit-ds-algo-dynamic.js
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── 42a46d97654db0e6c6eef77f80b59606
 │   │   ├── description.txt
 │   │   ├── read-split-on-new-line.js
-│   │   └── right.html
+│   │   
 │   ├── 48b79d0e098323b694ffbbeb078924e6
 │   │   ├── Big-O.md
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── 53d120a0fbdd46a13c59f76e5f3a2eec
 │   │   ├── description.txt
 │   │   ├── restart-docker-desktop.ps1
-│   │   └── right.html
+│   │   
 │   ├── 5864435b9041997efe6b14ea633871b8
 │   │   ├── description.txt
 │   │   ├── keypress.js
-│   │   └── right.html
+│   │   
 │   ├── 5ddc129e1e27bce575afa09c082a24b9
 │   │   ├── description.txt
 │   │   ├── right.html
@@ -177,32 +177,32 @@ for i in r.json():
 │   ├── 6665786ba69d51ac36646421bdc6c06c
 │   │   ├── My-Markdown-Project-Template-Readme.md
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── 69bb5ef5e62f9350d2766df123cc6e54
 │   │   ├── description.txt
 │   │   ├── github-markdown-formatting.md
-│   │   └── right.html
+│   │   
 │   ├── 6af1b7b3b0e7075cef628bb8497b961f
 │   │   ├── alt-web-dev-setup.md
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── 74c3cbe6710415e63e42759b98221769
 │   │   ├── command.txt
 │   │   ├── description.txt
 │   │   ├── makefile
-│   │   └── right.html
+│   │   
 │   ├── 82154f50603f73826c27377ebaa498b5
 │   │   ├── description.txt
 │   │   ├── python-study-guide.py
-│   │   └── right.html
+│   │   
 │   ├── 86949afff1760ed0d5ed3ec44da32b41
 │   │   ├── description.txt
 │   │   ├── postgres-setup.md
-│   │   └── right.html
+│   │   
 │   ├── 8898ad673bd2ecee9d93f8ec267cf213
 │   │   ├── create-a-nnew-file.js
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── 8d3ba6828f5ba9a4692d0a938697099f
 │   │   ├── description.txt
 │   │   ├── right.html
@@ -210,7 +210,7 @@ for i in r.json():
 │   ├── 9307f60ec7a5e7827184a70d05012067
 │   │   ├── description.txt
 │   │   ├── embeds.html
-│   │   └── right.html
+│   │   
 │   ├── _BASH
 │   │   ├── APPEND-DIR.js
 │   │   ├── Download-all-weblinks-of-certain-file-type.sh
@@ -255,7 +255,7 @@ for i in r.json():
 │   │   ├── remove-string-from-file-names.sh
 │   │   ├── remove-trailing-whitespace-from-file-names.sh
 │   │   ├── remove-unnecessary-files-folders.sh
-│   │   └── right.html
+│   │   
 │   ├── _JAVASCRIPT
 │   │   ├── APPEND-DIR.js
 │   │   ├── READFILE.js
@@ -333,31 +333,31 @@ for i in r.json():
 │   ├── ac7c525ffa115ac8687a838b55a9d2c5
 │   │   ├── Websites-to-return-2.md
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── b8eb08d8065456540618860621143dfc
 │   │   ├── description.txt
 │   │   ├── intro-2-js.md
-│   │   └── right.html
+│   │   
 │   ├── bfbe6abe4ec63107d4bbb74072fc1080
 │   │   ├── description.txt
 │   │   ├── javascript-array-methods.md
-│   │   └── right.html
+│   │   
 │   ├── c559a8e4d6fd2eb586b2e8452d6e233b
 │   │   ├── description.txt
 │   │   ├── regex-cheatsheet.md
-│   │   └── right.html
+│   │   
 │   ├── c7658139004c1e0bc02e0674188eaeb6
 │   │   ├── code-review.md
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── c9fc5460aaf86fa752eeb5a9120634c0
 │   │   ├── capKeys.js
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── cae36a07000d5dec8769d0e8cbc431b3
 │   │   ├── description.txt
 │   │   ├── module.exports.js
-│   │   └── right.html
+│   │   
 │   ├── cdb893d3a4d980ab9a562aa9b45b0b33
 │   │   ├── description.txt
 │   │   ├── right.html
@@ -383,18 +383,18 @@ for i in r.json():
 │   │   ├── isWeekDay.js
 │   │   ├── longest-common-prefix.js
 │   │   ├── mega-snips2.js
-│   │   └── right.html
+│   │   
 │   ├── d110afc16efa1d28b852e34bcff3da4e
 │   │   ├── description.txt
 │   │   ├── fix-postgresql-server-issues.md
-│   │   └── right.html
+│   │   
 │   ├── d88181af6d0ce040a371ff9ec7c8e1ef
 │   │   ├── psql-ex.sql
-│   │   └── right.html
+│   │   
 │   ├── e7b3e62408aaf51922cccb8405760bb5
 │   │   ├── Deploy-React-App-2-Heroku.md
 │   │   ├── description.txt
-│   │   └── right.html
+│   │   
 │   ├── e8d986746603502a075f25c33f88f732
 │   │   ├── add-line-nums-2-code-bloack.js
 │   │   ├── description.txt
@@ -404,17 +404,17 @@ for i in r.json():
 │   ├── e9eeb8ae2b3c45e0f6368248d1a41bc4
 │   │   ├── description.txt
 │   │   ├── input-output-error.md
-│   │   └── right.html
+│   │   
 │   ├── f07841d4701271218f1817ed12fcbafb
 │   │   ├── description.txt
 │   │   ├── enum-2-string.py
-│   │   └── right.html
+│   │   
 │   ├── fa4a41ac2ef7d66d5bc2dba07eec7591
 │   │   ├── description.txt
 │   │   ├── fancy-css-headers.md
-│   │   └── right.html
+│   │   
 │   ├── get-gists.py
-│   └── right.html
+│   
 ├── index.html
 ├── left.html
 ├── right.html
