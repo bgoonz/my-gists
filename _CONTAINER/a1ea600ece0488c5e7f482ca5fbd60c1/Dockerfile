@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.0-experimental
 
-FROM python:3.7-alpine AS builder
+FROM python:3.9-alpine AS builder
 
 WORKDIR /app
 COPY . .
