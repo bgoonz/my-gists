@@ -1,0 +1,23 @@
+{
+  "name": "my-gists",
+  "version": "1.0.0",
+  "description": "<!-- ⚠️ This README has been generated from the file(s) \"blueprint.md\" ⚠️-->\r [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#my-gists)",
+  "main": "scrap.js",
+  "dependencies": {
+    "mdt-docs-generator": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgoonz/my-gists.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgoonz/my-gists/issues"
+  },
+  "homepage": "https://github.com/bgoonz/my-gists#readme"
+}
