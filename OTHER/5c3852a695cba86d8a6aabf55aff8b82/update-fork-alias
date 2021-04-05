@@ -1,0 +1,12 @@
+#add this function to ~/.bashrc or ~/.bash_profile
+
+# each time you clone a fork, add the original as 'upstream'
+# git remote add upstream git://github.com/REPO_ORG/REPO_NAME.git
+# (thanks https://gist.github.com/CristinaSolana/1885435)
+
+# keeps a fork up-to-date from the main repo
+function update-fork() {
+  git fetch upstream
+  git pull upstream master
+  git push
+}

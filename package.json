@@ -1,7 +1,7 @@
 {
   "name": "my-gists",
   "version": "1.0.0",
-  "description": "<!-- ⚠️ This README has been generated from the file(s) \"blueprint.md\" ⚠️-->\r [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#my-gists)",
+  "description": "\r [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#my-gists)",
   "main": "scrap.js",
   "dependencies": {
     "mdt-docs-generator": "^2.0.2"

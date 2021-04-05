@@ -1,0 +1,216 @@
+errors:
+
+  key 34.8026083,135.5382721 must not contain '.'
+
+  Pitt Town, New South Wales - cannot read length, politics/population.js:8
+
+... 1:30pm
+
+took 4.6 hours
+
+14,3330,384 pages total
+
+
+redirect:true
+8,550,441  -- 5,779,943
+
+
+disambig:true
+277,278 -- 14,053,106
+
+sections=0
+8,550,444
+
+templates=0
+8,797,289
+
+categories=0
+8,631,965
+
+references=0
+9,856,118
+
+infoboxes=0
+10,646,967  -- 3,683,417
+
+images=0
+12,349,151  -- 1,981,233  
+
+tables=0
+13,486,852  --  843,532
+
+coordinates=null
+13,208,843   -- 1,121,541
+
+
+
+(pages:)
+(5,502,665)  - !"5,780,329" ... :/
+
+cat!0
+5,411,845
+
+img!0
+1,980,945
+
+table:!0
+843,345
+
+infobox:!0
+3,683,165  (73,000 with 2!), 7k with 3
+
+coord:!null
+1,121,347
+
+template:!0
+5,255,820
+
+reference:!0
+4,473,126
+
+sections:!0 (...not '1')
+5,275,361
+
+page- has section, reference
+4,401,689
+
+page - has section, reference, category
+4,379,815
+
+..and a template
+4,202,405
+
+  → and >100 words
+  3,003,339   (are there 1m bot-generated articles?) 1,190,031
+    Ken Cameron (footballer) ✅
+    Don Worland
+    Jim Robers (Australian footballer)
+    Sana'a British School ❌
+    Basho SIngs ❌
+    Ertinj ❌
+    Bid sukhteh, Razavi Khorsan ❌
+    Malcolm Gray ❌
+    Bazangan
+    Chenar Sukhteh
+    Rich Township High School District 227
+    3rd Corps (Yugoslav Partisans)
+    Angophora woodsiana
+    2013 Wales Rally GB
+    Shady Grove, Putnam County, Tennessee
+  
+  
+
+..and an infobox
+3,061,622
+
+.. and >100 words
+2,113,566
+
+→
+  ...and an image
+  1,659,094
+...and an infobox
+1,265,585
+
+word-count:
+<10 words:
+16,683
+<100 words:
+1,744,997
+<200
+2,732,027
+<300
+3,359,800
+<400
+3,805,369
+<500
+4,121,870
+<1000
+4,877,900
+<1200
+5,014,185
+<1500
+5,148,287
+<2000
+5,274,520
+<3000
+5,386,360
+<4000
+5,433,820
+<5000
+5,458,771
+
+all words:
+2,693,286,835
+article words:
+2,661,037,011  (2.6bn)
+   → / page_count = 483 words/page
+
+avg reading speed is 250 words per minute
+2661037011*250 = 665,259,252,750 minutes
+minutes in a year = 525600
+665259252750/525600 = 1,265,713 years
+
+
+reading speed = 250 words per minute - 15,000 words/hour
+most paragraphs are 75 words
+most articles are 800 words
+
+career reader - 
+250 words per minute - 15,000 words/hour - 112,500 words/day
+=that's 232 articles a day
+252 working days
+=58,464 articles a year
+would hit 1m article after 17 years
+it would take 94 years.
+
+
+typical books have 50k words?  novels 90k?  ~80k average
+=~5.5hrs/book
+
+wikipedia is 33,262 books?
+max @ 252 books per year, 131 years to read wikipedia
+max @ 365 books per year, 91 years to read wikipedia
+
+bret victor bookshelf: 6 rows, 25 books/row= 150 books/shelf
+12,000,000 words/shelf (12m)
+
+221 shelves
+
+viz: reading all of wikipedia
+blog: what's in wikipedia
+blog: wikipedia is failing
+viz: wikipedia on a bookshelf viz
+
+--word-count query:
+db.pages.aggregate([
+  {$match:{is_redirect:false}},
+  {$group:{_id:null, total:{$sum:"$words"}}}
+])
+
+
+word-count by page-size:
+<50:
+29,698,752 words
+<100:
+86,089,914 words
+<200:
+229,361,223 words
+<400:
+538,599,372 words
+<500:
+680,003,558
+<800:
+1,029,514,671
+<1000:
+1,209,255,184
+<1500:
+1,537,614,639
+<1800:
+1,677,761,520
+<2000:
+1,755,002,731
+<2500:
+1,909,563,237
+<3000:
+2,025,505,601

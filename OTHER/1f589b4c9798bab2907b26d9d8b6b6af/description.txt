@@ -1,0 +1,1 @@
+spotter results from nlp.txt('').topics()    - april 26, 2016
